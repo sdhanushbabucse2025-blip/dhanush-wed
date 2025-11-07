@@ -144,13 +144,40 @@
 
 <script>
 // --- Sample product data (would normally come from a server) ---
+// --- Sample product data (would normally come from a server) ---
 const sampleProducts = [
-  {id:1,title:'Wireless Headphones',price:2499,img:'https://cdn.dribbble.com/userupload/12483237/file/original-cc0b855ac3db53452860d2039458a56f.png?crop=0x0-4800x3600&format=webp&resize=640x480&vertical=center'},
-  {id:2,title:'Smart Watch',price:3499,img:'https://picsum.photos/seed/p2/600/400'},
-  {id:3,title:'Bluetooth Speaker',price:1299,img:'https://picsum.photos/seed/p3/600/400'},
-  {id:4,title:'DSLR Camera',price:45999,img:'https://picsum.photos/seed/p4/600/400'},
-  {id:5,title:'Gaming Mouse',price:999,img:'https://picsum.photos/seed/p5/600/400'}
+  {
+    id: 1,
+    title: 'Wireless Headphones',
+    price: 2499,
+    img: 'https://m.media-amazon.com/images/I/61Ncxk4T8pL._AC_SL1500_.jpg'
+  },
+  {
+    id: 2,
+    title: 'Smart Watch (Noise Pulse 4 Max)',
+    price: 3499,
+    img: 'https://cdn.shopify.com/s/files/1/0997/6284/products/ColorFit-Pulse-4-Max.png?v=1712059605'
+  },
+  {
+    id: 3,
+    title: 'Bluetooth Speaker',
+    price: 1299,
+    img: 'https://m.media-amazon.com/images/I/71t7bS0E5BL._AC_SL1500_.jpg'
+  },
+  {
+    id: 4,
+    title: 'DSLR Camera',
+    price: 45999,
+    img: 'https://m.media-amazon.com/images/I/81S9P0RHV7L._AC_SL1500_.jpg'
+  },
+  {
+    id: 5,
+    title: 'Gaming Mouse',
+    price: 999,
+    img: 'https://m.media-amazon.com/images/I/61N6K6m2oHL._AC_SL1500_.jpg'
+  }
 ];
+
 
 // --- LocalStorage helpers ---
 const ls = {get:(k, fallback)=>{try{return JSON.parse(localStorage.getItem(k))||fallback}catch(e){return fallback}}, set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
